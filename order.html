@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>我要订餐</title>   
+    <link rel="stylesheet" href="./css/weui.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <style>
+     .order{background: rgb(121, 189, 80)}
+     .order_header{padding: 0.8em; color: white}
+     .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+    }
+
+    .flex-item {
+        border: 1px solid lightgray;
+        width: 31%;
+        height: 15vh;
+        margin: 5px;
+    }
+    .flex-item:hover {
+        border: 2px solid rgb(121, 189, 80);
+    }
+    .flex-item p {padding-top: 0.1em;font-size: 0.1em;text-align: center;margin-top: 0.5em}
+    </style>
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>-->
+    <body>
+        <div class="weui-flex order">
+            <div class="weui-flex__item order_header">请选择餐段进行点餐</div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd">今日（2018-08-26）</div>
+            <div class="weui-panel__bd">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <p>今日早餐</p>
+                        <p>点餐 00:00 - 00:00</p>
+                        <p>点餐 07:30 - 08:30</p>
+                    </div>
+                    <div class="flex-item">
+                        <p>今日午餐</p>
+                        <p>点餐 00:00 - 10:15</p>
+                        <p>点餐 11:30 - 12:30</p>
+                    </div>
+                    <div class="flex-item">
+                        <p>今日早餐</p>
+                        <p>点餐 00:00 - 16:00</p>
+                        <p>点餐 17:30 - 18:30</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd">明日（2018-08-27）</div>
+            <div class="weui-panel__bd">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <p>今日早餐</p>
+                        <p>点餐 00:00 - 00:00</p>
+                        <p>点餐 07:30 - 08:30</p>
+                    </div>
+                    <div class="flex-item">
+                        <p>今日午餐</p>
+                        <p>点餐 00:00 - 10:15</p>
+                        <p>点餐 11:30 - 12:30</p>
+                    </div>
+                    <div class="flex-item">
+                        <p>今日早餐</p>
+                        <p>点餐 00:00 - 16:00</p>
+                        <p>点餐 17:30 - 18:30</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

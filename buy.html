@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>我的订单</title>   
+    <link rel="stylesheet" href="./css/weui.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/buy.css">
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <script src="./js/buy.js"></script>
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <body>
+        <div class="weui-tab" style="height: 93%">
+        <div class="weui-navbar">
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+            我要下单
+            </a>
+            <a class="weui-navbar__item" href="#tab2">
+            商家
+            </a>
+            <a class="weui-navbar__item" href="./home.html">
+                个人中心
+            </a>
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="buy_left">
+                    <ul>
+                        <li class="buy_li">风味小炒</li>
+                        <li class="buy_li">湘味小炒</li>
+                        <li class="buy_li">面食</li>
+                        <li class="buy_li">精美盖饭</li>
+                        <li class="buy_li">蒸菜和炖汤</li>
+                        <li class="buy_li">产妇套餐</li>
+                        <li class="buy_li">治疗饮食</li>
+                        <li class="buy_li">饮品类</li>
+                        <li class="buy_li">米饭</li>
+                    </ul>
+                </div>
+                <div class="buy_right">
+                    <p class="buy_tittle" style="padding:0.3rem;margin-top: 0.5rem"></p>
+                    <!-- <div class="weui-cells">
+                        <div class="weui-cell">
+                           <div class="but_commodity_left">
+                               <img src="./微信图片_20180831105945.jpg" width="100%" style="display: inline-block">
+                               <p style="color: red">￥38.00</p>
+                           </div>
+                           <div class="but_commodity_right">
+                                <p >XXXXX</p>
+                                <p >已售X份</p>
+                                <span class="buy_count">
+                                    <span>-</span>
+                                    <span>0</span>
+                                    <span>+</span>
+                                </span>
+                           </div>
+                        </div>
+                    </div> -->
+                </div>
+               
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+                <div class="weui-cells">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <h4>北大医院</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells" style="margin-top: 0px">
+                    <div class="weui-flex buy_type">
+                        <div class="weui-flex__item" style="border: none;">堂食</div>
+                        <div class="weui-flex__item">
+                            <a href="./order.html">外卖</a>
+                        </div>
+                        <div class="weui-flex__item">预定</div>
+                    </div>
+                </div>
+                <div class="weui-cells">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>订餐公告</p>
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <pre>
+每日订餐时间
+早餐:提前一天预定
+午餐:00：00-10:00
+晚餐:00：00-16:00
+每日送餐时间
+早餐:07:30-08:00
+午餐:11:30-12:30
+晚餐:17:30-18:30
+                        </pre>
+                    </div>
+                </div>
+                <div class="weui-cells">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <h4>商家信息</h4>
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <p>地址：广东省深圳市福田区莲花路1120号</p>
+                            </div>
+                    </div>
+                    <div class="weui-cell">
+                            <div class="weui-cell__bd">
+                                <p>电话：0755-83923333-3104</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        <!-- <div class="footer_submit">111</div> -->
+        <div class="weui-footer">
+            <div class="footer_text"></div>
+            <div class="footer_left"><img src="./微信图片_20180831133205.png" width="13%"; height="100%"></div>
+            <div class="footer_sum"></div>
+            <a class="footer_right" style="color: white" href="./pay.html">选好了</a>
+        </div>
+    </body>
+    <script>
+    </script>
+</html>

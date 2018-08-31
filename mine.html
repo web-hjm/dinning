@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>我的资料</title>   
+    <link rel="stylesheet" href="./css/weui.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <style>
+    .min_submit {margin: 0.7em}
+    </style>
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <body>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">真实姓名：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input" type="text"  >
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">性别：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input" type="text"  >
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">生日：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input font-input date-input" type="text" data-toggle='date' id="input-date-start-store"  placeholder="请选择日期" />
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">会员等级：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input" type="text" value="非会员">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">手机号码：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号码">
+                </div>
+            </div>
+             <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__hd">
+                <label class="weui-label">验证码：</label>
+                </div>
+                <div class="weui-cell__bd">
+                <input class="weui-input" type="tel" placeholder="请输入手机号">
+                </div>
+                <div class="weui-cell__ft">
+                <button class="weui-vcode-btn">获取验证码</button>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">身份证号码：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input"  placeholder="未设置">
+                </div>
+            </div>
+        </div>
+        <a href="./home.html" class="weui-btn weui-btn_primary min_submit">更新资料</a>
+    </body>
+    <script>
+        $("#input-date-start-store").calendar(); //开始日期初始化
+    </script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>个人中心</title>
+<link rel="stylesheet" href="./css/weui.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+<link rel="stylesheet" href="./css/home.css">
+<style>
+    .pay_footer{position: fixed;width: 100%;bottom: 0px;}
+    .pay_footer_left,.pay_footer_center,.pay_footer_right{height: 8vh;text-align: center;line-height: 8vh;border-right: 1px solid white;}
+    .pay_footer_left,.pay_footer_center{background: #535353;color: white}
+    .pay_footer_right{background: rgb(121, 189, 80);color: white;}
+</style>
+<!-- body 最后 -->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<!-- 如果使用了某些拓展插件还需要额外的JS -->
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/city-picker.min.js"></script>-->
+<script src="./js/home.js"></script>
+
+<body>
+    <div class="weui-cells">
+        <a class="weui-cell weui-cell_access" href="./address.html">
+            <div class="weui-cell__bd">
+                <p>姓名 联系方式</p>
+                <p>送餐地址</p>
+                <div class="weui-cell__ft"></div>
+            </div>
+        </a>
+    </div>
+    <div class="weui-cells">
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">床号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="填入床号或其他位置信息，不可留空！" tittle='填入床号或其他位置信息，不可留空！'>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells weui-cells_radio">
+            <label class="weui-cell weui-check__label" for="x11">
+                <div class="weui-cell__bd">
+                    <p>微信支付</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" class="weui-check" name="radio1" id="x11">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x12">
+                <div class="weui-cell__bd">
+                    <p>IC卡</p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x12" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+        </div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">订单备注</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="口味，偏好等其他需求" tittle='填入床号或其他位置信息，不可留空！'>
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <p>明日午餐（2018/09/01）</p>
+            </div>
+            <div class="weui-cell">
+                <p>春菜排骨煲 *3￥38.00</p>
+            </div>
+            <div class="weui-cell">
+                <p>总计：￥114.00，已优惠：￥0.00</p>
+            </div>
+        </div>
+        <div class="weui-footer pay_footer">
+                <div class="weui-flex">
+                    <div class="weui-flex__item pay_footer_left"><a href="./buy.html" style="color: white">GO</a></div>
+                    <div class="weui-flex__item pay_footer_center">需支付</div>
+                    <div class="weui-flex__item pay_footer_right">立即下单</div>
+                </div>
+        </div>
+        <script>
+            $('.pay_footer_right').click(function() {
+                $.alert("是否确定下单", "确认支付");
+            })
+        </script>
+</body>
+
+</html>

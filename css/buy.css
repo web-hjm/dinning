@@ -1,0 +1,28 @@
+.weui-bar__item--on{border-bottom: 3px solid rgb(121, 189, 80)}
+.buy_left{width: 30%;background: #f7f7f7;height: 82vh;float: left;overflow: hidden;}
+.buy_left ul li {height: 2rem;border-bottom: 1px solid lightgray;text-align: center;vertical-align: middle;line-height: 2rem;font-size: .0625rem;}
+.buy_right{width: 70%;height: 82vh;display: inline-block;font-size: 0.8em;float: right;overflow-y: auto;}
+.buy_active{border-left: 3px solid orangered;}
+.buy_tittle,{padding: 0.3rem;}
+.but_commodity_left {width: 40%;}
+.but_commodity_right{width: 60%;padding-left: 0.5rem;height: 100%;}
+.but_commodity_right p {font-size: 0.0625rem;}
+.but_commodity_right p:nth-child(2) {padding-bottom: 3rem}
+.buy_right .weui-cell {border-bottom: 1px solid lightgray;}
+.buy_count {position: absolute;right: 1rem;bottom: 0.5rem;}
+.buy_count span {margin-left: 0.5rem;}
+/* .weui-tab__bd .weui-tab__bd-item{overflow: hidden;} */
+.buy_right .weui-cells::nth-child(1) {margin-top: 0px;}
+.weui-count__decrease, .weui-count__increase{color: rgb(121, 189, 80); width: 1rem; height: 1rem;border-radius: 50%; border: 1px solid lightgray;display: inline-block;text-align: center;line-height: 1rem;}
+.weui-count__decrease {display: none};
+.footer_submit{width: 100%;  background: red;position: fixed;bottom: 0px;}
+.footer_left{background: #353535;width: 70%;display: inline-block;float: left;height: 7vh;position: relative;}
+.footer_right{width: 30%;display: inline-block;background: rgb(121, 189, 80);height: 7vh;color: white;text-align: center;line-height: 7vh;}
+html,body{height: 100%;overflow: hidden;}
+.footer_left img {position: absolute;left: 1rem;}
+.footer_text{width: 1rem; height: 1rem; border-radius: 50%;background: orangered;position: absolute;color: white;z-index: 999;left: 1.7rem;display: none;}
+.footer_sum{position: absolute;color: white;z-index: 999;left: 4rem;text-align: center;font-size: 1rem;height: 100%;margin-top: 0.2rem;}
+.footer_sum{display: none;}
+.buy_type>div {height: 10vh;text-align: center;line-height: 10vh;border-left: 1px solid lightgray;}
+.buy_type>div:hover{cursor: pointer;}
+.buy_type {padding: 2vh;}

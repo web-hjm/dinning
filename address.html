@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>IC卡查询</title>   
+    <link rel="stylesheet" href="./css/weui.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <style>
+    .min_submit {margin: 0.7em}
+    </style>
+    <!-- body 最后 -->
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <!-- 如果使用了某些拓展插件还需要额外的JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-weui/1.2.1/js/city-picker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-weui/1.2.1/js/swiper.min.js"></script>
+    <body>
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">称呼：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input" type="text"  placeholder="怎么称呼您">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">手机：</label></div>
+                <div class="weui-cell__bd">
+                <input class="weui-input" type="number" pattern="[0-9]*" placeholder="您的手机">
+                </div>
+            </div>
+            <p style="color: lightgray;font-size: 0.8rem;padding:1rem">送达位置</p>
+            <div class="weui-cell">
+                    <!-- <div class="weui-cell__hd"><label class="weui-label">姓名：</label></div> -->
+                    <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="job"  placeholder="请选择位置">
+                    </div>
+                </div>
+        </div>
+      
+        <a href="./home.html" class="weui-btn weui-btn_primary min_submit">确认</a>
+    </body>
+    <script>
+        $("#job").select({
+            title: "选择职业",
+            items: ["外科", "内科", "门诊"]
+        });
+    </script>
+</html>
